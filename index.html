@@ -10,6 +10,15 @@
     <title>WebStudio - разработка программного обеспечения</title>
 </head>
 <body>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-modal" data-modal-close>X</button>
+            123
+            <p>334
+                <p>76795</p>
+            </p>
+        </div>
+    </div>
     <header>
         <div class="container flexbox">
             <nav class="navv">
@@ -46,7 +55,7 @@
         <section class="maininfo">
            <div class="container">
             <h1 class="mainslogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <p><button class="order-service animation">Заказать услугу</button></p> 
+            <p><button class="order-service animation" data-modal-open>Заказать услугу</button></p> 
         </div>      
 </section>
         <section class="qualities">
@@ -248,6 +257,7 @@
             
         </div>
    </footer>
+   <script src="./js/modal.js"></script>
 </body>
 </html>
 
