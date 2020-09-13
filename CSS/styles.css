@@ -9,7 +9,7 @@
     --blue: #2196F3;
     --white-transp:rgba(255, 255, 255, 0.6);
     --gray: #F5F4FA;
-    --pictures:#AFB1B8;
+    --pictures-gray:#AFB1B8;
 }
 body {
     background-color: var(--white);
@@ -88,10 +88,6 @@ padding: 0;
     display: flex;
     margin-left: 93px;
 }
-.menu-list {
-    font-size: 14px;
-margin-right: 50px;
-    }
     .navigation .menu-list:last-child {
         margin-right: 0px;
     }
@@ -99,9 +95,45 @@ margin-right: 50px;
         text-decoration: none;
         color: var(--black);
     }
-    .menu-list a:hover, .menu-list a:focus {
+    .menu-list {
+        font-size: 14px;
+    margin-right: 50px;
+        }
+    .menu-list:hover a, .menu-list:focus a {
 color: var(--blue);
     }
+    .menu-list a{
+        position: relative;
+    }
+
+.menu-list a::after {
+    content: "";
+    position: absolute;
+}
+.menu-list:hover a::after {
+    content: "";
+display: block;
+    width: 100%;
+border-radius:0 0 2px 2px;
+margin-top: 10px;
+    height: 3px;
+    background-color: var(--blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.active::after {
+    content: "";
+display: block;
+    width: 100%;
+border-radius:0 0 2px 2px;
+margin-top: 10px;
+    height: 3px;
+    background-color: var(--blue);
+    
+}
+
+
+
 
 .header-contacts {
     display: flex;
@@ -203,6 +235,9 @@ padding: 10px 30px;
 color: var(--white);
 border-radius: 4px;
 }
+.order-service {
+    cursor: pointer;
+}
 .qualities {
     font-size: 14px;
     padding: 94px 15px;
@@ -261,11 +296,27 @@ background-repeat: no-repeat;
 }
 
 .what-we-do1 {
+    position: relative;
+height: 294px;
     margin-right: 30px;
 }
 .what-we-do1:last-child {
     margin-right: 0px;
 }
+.descr-of-work {
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    color: var(--white);
+text-align: center;
+font-weight: bold;
+font-style: italic;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.6) 50%, rgba(47, 48, 58, 0.6) 100%);
+}
+
+
 
 .our-team {
     background: var(--gray) repeat-x;
@@ -309,7 +360,7 @@ background-repeat: no-repeat;
     width: 20px;
 height: 20px;
 border:none;
-fill:var(--pictures);
+fill:var(--pictures-gray);
 }
 
 .but-icon:hover svg, .but-icon:focus svg{
@@ -328,23 +379,23 @@ fill:var(--pictures);
 .customers ul {
     display: flex;
 }
-.customer-logo a {
+.customer-logo {
     display: block;
-    border: 1px solid var(--pictures);
+    border: 1px solid var(--pictures-gray);
     border-radius: 4px;
     width: 170px;
     height: 90px;
     margin-right: 30px;
     padding: 22px 45px;
 }
-.customer-logo a:hover, .customer-logo a:focus {
+.customer-logo:hover, .customer-logo:focus {
     border: 1px solid var(--blue);
 }
-.customer-logo a:hover svg, .customer-logo a:focus svg {
+.customer-logo:hover svg, .customer-logo:focus svg {
 fill:var(--blue);
 }
 .customer-logo svg {
-    fill: var(--pictures);
+    fill: var(--pictures-gray);
     
     width: 80px;
     height: 45px;
@@ -353,7 +404,7 @@ fill:var(--blue);
 .invisible {
     display:none;
 }
-/* -----Портфолио------- */
+/* -----Портфолио начало------- */
 .filter-of-works ul{
     display: flex;
     justify-content: center;
@@ -386,17 +437,38 @@ padding: 6px 22px;
     flex-wrap: wrap;
     margin-bottom: 64px;
 }
-.examples li {
+.example {
 margin: 0 30px 30px 0;
 background-image: url(../images/container-item.png);
-height: 404px;}
+height: 404px;
+position: relative;
+}
 
-.examples li:nth-child(3n) {
+.example:nth-child(3n) {
     margin: 0 0px 30px 0;
     }
-    .examples li:hover, .examples li:focus {
+    .example:hover, .example:focus {
         cursor: pointer;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.example::after{
+    content: "";
+    position: absolute;
+}
+
+
+
+.large-descr{
+    position: relative;
+    width: 370px;
+height: 294px;
+}
+.large-descr > p {
+    position: absolute;
+    bcg:var(--blue);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
 }
 
 .about-work {
@@ -409,8 +481,11 @@ margin-top: 20px;
     display: block;
     max-width: 346px;
 }
+/* -----Портфолио конец------- */
 
-
+.animation {
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 

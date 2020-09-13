@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/styles.css">  
     <link rel="stylesheet" href="./CSS/normalize.css">                   
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=fallback" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=fallback" rel="stylesheet">
 
-    <title>Портфолио веб-студии WebStudio</title>
+    <title>WebStudio - разработка программного обеспечения</title>
 </head>
 <body>
     <header>
@@ -16,24 +16,24 @@
         <p class="logo"><a href="./"><span>Web</span>Studio</a></p>
         <ul class="navigation list">
             <li class="menu-list">
-                <a href="./">Студия</a>
+                <a href="./" class="animation">Студия</a>
             </li>
             <li class="menu-list">
-                <a href="./portfolio.html" style="color:#2196F3;">Портфолио</a>
+                <a href="./portfolio.html" style="color:#2196F3;" class="active animation">Портфолио</a>
             </li>
             <li class="menu-list">
-                <a href="/">Контакты</a>
+                <a href="/" class="animation">Контакты</a>
             </li>
         </ul>
     </nav>
         <div class="header-contacts">
-            <p><a href="mailto:info@devstudio.com" class="mail">
+            <p><a href="mailto:info@devstudio.com" class="mail animation">
                 <svg>
                     <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a></p>
             
-                <p><a href="tel:380961111111" class="phone">
+                <p><a href="tel:380961111111" class="phone animation">
                     <svg>
                         <use href="./images/sprite.svg#icon-telephone"></use>
                     </svg>
@@ -46,11 +46,11 @@
         <section class="filter-of-works">
             <div class="container">
             <ul class="list">
-                <li>Все</li>
-                <li>Веб-сайты</li>
-                <li>Приложения</li>
-                <li>Дизайн</li>
-                <li>Маркетинг</li>
+                <li class="animation">Все</li>
+                <li class="animation">Веб-сайты</li>
+                <li class="animation">Приложения</li>
+                <li class="animation">Дизайн</li>
+                <li class="animation">Маркетинг</li>
             </ul>
         </div>
         </section>
@@ -58,32 +58,41 @@
     <div class="container">
 <h2 class="invisible">Примеры наших работ</h2>
 <ul class="list">
-    <li><img src="./images/portfolio1.png" alt="Технокряк" width="370" height="294">
-        <div class="about-work"><h3>Технокряк</h3>
+    <li class="example animation"><div class="large-descr"><img src="./images/portfolio1.png" alt="Технокряк" width="370" height="294">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
+        </p><div class="about-work"><h3>Технокряк</h3>
             <p>Веб-сайт</p></div></li>
-    <li><img src="./images/portfolio2.png" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-        <div class="about-work"><h3>Постер New Orlean vs Golden Star</h3>
+    <li class="example animation"><div class="large-descr"><img src="./images/portfolio2.png" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
+        </p><div class="about-work"><h3>Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p></div></li>
-    <li><img src="./images/portfolio3.png" alt="Ресторан Seafood" width="370" height="294">
-        <div class="about-work"><h3>Ресторан Seafood</h3>
+    <li class="example animation"><div class="large-descr"><img src="./images/portfolio3.png" alt="Ресторан Seafood" width="370" height="294">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
+        </p><div class="about-work"><h3>Ресторан Seafood</h3>
             <p>Приложение</p></div></li>
-        <li><img src="./images/portfolio4.png" alt="Проект Prime" width="370" height="294">
-            <div class="about-work"><h3>Проект Prime</h3>
+        <li class="example animation"><div class="large-descr"><img src="./images/portfolio4.png" alt="Проект Prime" width="370" height="294">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
+        </p><div class="about-work"><h3>Проект Prime</h3>
                 <p>Маркетинг </p></div></li>
-        <li><img src="./images/portfolio5.png" alt="Проект Boxes" width="370" height="294">
-            <div class="about-work"><h3>Проект Boxes</h3>
+        <li class="example animation"><div class="large-descr"><img src="./images/portfolio5.png" alt="Проект Boxes" width="370" height="294">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
+        </p><div class="about-work"><h3>Проект Boxes</h3>
                 <p>Приложение</p></div></li>
-        <li><img src="./images/portfolio6.png" alt="Inspiration has no Borders" width="370" height="294">
+        <li class="example animation"><div class="large-descr"><div class="large-descr"><img src="./images/portfolio6.png" alt="Inspiration has no Borders" width="370" height="294">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.
+        </p>
+        </div>
+            
             <div class="about-work"><h3>Inspiration has no Borders</h3>
                 <p>Веб-сайт</p></div></li>
-            <li><img src="./images/portfolio7.png" alt="Издание Limited Edition" width="370" height="294">
-                <div class="about-work"><h3>Издание Limited Edition</h3>
+            <li class="example animation"><div class="large-descr"><img src="./images/portfolio7.png" alt="Издание Limited Edition" width="370" height="294">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.</p><div><div class="about-work"><h3>Издание Limited Edition</h3>
                     <p>Дизайн</p></div></li>
-            <li><img src="./images/portfolio8.png" alt="Проект LAB" width="370" height="294">
-                <div class="about-work"><h3>Проект LAB</h3>
+            <li class="example animation"><div class="large-descr"><img src="./images/portfolio8.png" alt="Проект LAB" width="370" height="294">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.</p><div><div class="about-work"><h3>Проект LAB</h3>
                     <p>Маркетинг</p></div></li>
-            <li><img src="./images/portfolio9.png" alt="Growing Business" width="370" height="294">
-                <div class="about-work"><h3>Growing Business</h3>
+            <li class="example animation"><div class="large-descr"><img src="./images/portfolio9.png" alt="Growing Business" width="370" height="294">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, aut veniam itaque est laudantium sed.</p><div><div class="about-work"><h3>Growing Business</h3>
                     <p>Приложение</p></div></li>
 </ul>
 </div>
@@ -99,23 +108,23 @@
                     <p>   г. Киев, пр-т Леси Украинки, 26
                     </p>
                     </address>
-                    <p><a href="mailto:info@example.com">info@example.com</a></p>
-                    <p><a href="tel:380991111111">+38 099 111 11 11</a>
+                    <p><a href="mailto:info@example.com" class="animation">info@example.com</a></p>
+                    <p><a href="tel:380991111111" class="animation">+38 099 111 11 11</a>
                     </p>
                 </div>
                 <div class="footer-social"> 
                     <p>Присоединяйтесь</p>
                     <ul class="social list">
-                        <li class="social-icon"><button class="but-icon"><svg>
+                        <li class="social-icon"><button class="but-icon animation"><svg>
                             <use href="./images/sprite.svg#icon-facebook"></use>
                         </svg></button></li>
-                        <li class="social-icon"><button class="but-icon"><svg>
+                        <li class="social-icon"><button class="but-icon animation"><svg>
                             <use href="./images/sprite.svg#icon-instagram"></use>
                         </svg></button></li>
-                        <li class="social-icon"><button class="but-icon"><svg>
+                        <li class="social-icon"><button class="but-icon animation"><svg>
                             <use href="./images/sprite.svg#icon-linkedin"></use>
                         </svg></button></li>
-                        <li class="social-icon"><button class="but-icon"><svg>
+                        <li class="social-icon"><button class="but-icon animation"><svg>
                             <use href="./images/sprite.svg#icon-twitter"></use>
                         </svg></button></li>
                     </ul>
