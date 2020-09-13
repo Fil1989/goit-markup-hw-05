@@ -560,6 +560,7 @@ left:0;
    overflow: hidden;
    z-index: 2;
    opacity: 1;
+   transition: opacity 250ms;
 }
 .modal{
 position: absolute;
@@ -579,6 +580,7 @@ padding: 5px 10px;
 color: var(--white);
 border:none;
 border-radius: 30%;
+cursor: pointer;
 }
 .backdrop.is-hidden {
 opacity: 0; 
