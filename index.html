@@ -13,10 +13,44 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-modal" data-modal-close>X</button>
-            123
-            <p>334
-                <p>76795</p>
-            </p>
+            <label for="age">Возраст</label>
+0<input id="age" type="range" name="age" min="0" max="120" value="30" />120
+<label for="color">Цвет</label>
+        </br>
+<input id="color" name="color" type="color" />
+<br>
+<label for="size">Размер футболки</label>
+<select id="size" name="size">
+  <option value="xs">Extra Small</option>
+  <option value="s">Small</option>
+  <option value="m">Medium</option>
+  <option value="l">Large</option>
+</select>
+<br><br>
+<select name="month">
+    <optgroup label="Лето">
+      <option value="s6">Июнь</option>
+      <option value="s7">Июль</option>
+      <option value="s8">Август</option>
+    </optgroup>
+  
+    <optgroup label="Осень">
+      <option value="s9">Сентябрь</option>
+      <option value="s10">Октябрь</option>
+      <option value="s11">Ноябрь</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <label for="fav">Выберите свой любимый браузер:</label>
+<input list="browsers" name="fav" id="fav" />
+
+<datalist id="browsers">
+  <option>Edge</option>
+  <option>Firefox</option>
+  <option>Chrome</option>
+  <option>Opera</option>
+  <option>Safari</option>
+</datalist>
         </div>
     </div>
     <header>

@@ -232,6 +232,7 @@ text-align: center;
 letter-spacing: 0.06em;
 padding: 10px 30px;
 color: var(--white);
+border:none;
 border-radius: 4px;
 }
 .order-service {
