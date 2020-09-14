@@ -104,12 +104,13 @@ color: var(--blue);
     }
     .menu-list a{
         position: relative;
+        padding:30px 0;
     }
 
 .menu-list a::after {
     content: "";
     position: absolute;
-        top:44px;
+        top:74px;
     width: 100%;
     border-radius:2px;
         height: 4px;
@@ -118,7 +119,7 @@ color: var(--blue);
 }
 .menu-list:hover a::after {
     left:0;
-    top:44px;
+    top:74px;
     transform: scaleX(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -126,8 +127,7 @@ color: var(--blue);
 .menu-list a.active::after {
     width: 100%;
 left:0;
-top:44px;
-
+top:74px;
     transform: scaleX(1);
 }
 
